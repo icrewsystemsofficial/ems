@@ -1,6 +1,7 @@
 <?php 
+    session_start();
     // APP CONFIGS;
-    define('APP_TITLE', 'EMS');  
+    define('APP_TITLE', 'Leonard EMS');  
 
     // DATABASE CONFIGS;
     define('DB_HOST', 'localhost');

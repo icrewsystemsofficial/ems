@@ -1,0 +1,1 @@
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `updated_at`) VALUES ('1', 'Leonard Selvaraja', 'kashrayks@gmail.com', '1234', CURRENT_TIMESTAMP);

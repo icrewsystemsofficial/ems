@@ -38,10 +38,14 @@
                 <div class="col-lg-7">
                   <div class="text-center mt-5">
                     <h1 class="heading h1 text-white">
-                      Pre Summer Internship '21
+                      Events Page.
                     </h1>
                     <p class="lead lh-180 text-white mt-3">
                       Modify this page and create an event management system.
+
+                      <?php 
+                        print_r($_SESSION);
+                      ?>
                     </p>
                     <div class="mt-5">
                       <a href="#" class="btn btn-primary mr-3">Login</a>
@@ -79,12 +83,10 @@
                         </p>
 
                         <?php 
-                            $result = $conn->query('SELECT * FROM `users`');                        
+                            $result = $conn->query('SELECT * FROM `dummy`');                        
                             if ($result->num_rows > 0) {                                
                                 foreach ($result->fetch_assoc() as $res => $value) {
-                                    echo $res . " - ";  
-                                  echo $value;
-                                    echo "<br>";
+                                    echo $value;
                                 }                
                             } else {
                                 echo "0 results";
